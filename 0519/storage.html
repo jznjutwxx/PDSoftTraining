@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        // window.onload=function(){
+        //     console.log(localStorage.getItem("tstitem"));
+        //     localStorage.setItem("tstitem",100);
+        //     sessionStorage.setItem("tt",12);
+        // }
+            
+            var worker=new Worker("workers.js");
+            worker.onmessage=function(event){
+                document.getElementById("result").innerHTML=event.data;
+            }
+            worker.postMessage("5");
+
+    </script>
+</body>
+</html>

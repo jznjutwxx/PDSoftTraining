@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="cs" style="border:1px solid #444" width="400" height="400"></canvas>
+    <script>
+        // x	矩形左上角的 x 坐标。
+        // y	矩形左上角的 y 坐标。
+        // width	矩形的宽度，以像素计。
+        // height	矩形的高度，以像素计
+        var canv = document.getElementById("cs");
+        var ctx = canv.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(0, 0, 150, 100);
+        ctx.fillStyle = "red";
+        ctx.fillRect(10, 10, 130, 80);
+    </script>
+</body>
+
+</html>

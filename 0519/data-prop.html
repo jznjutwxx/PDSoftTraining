@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a id="qq" data-age="30" onclick="show()">测试</a>
+    <div id="username" data-uid="12345" data-uname="wxx"></div>
+    <script>
+        function show(){
+            alert(document.getElementById("username").dataset.uid);
+        }
+    </script>
+</body>
+</html>
